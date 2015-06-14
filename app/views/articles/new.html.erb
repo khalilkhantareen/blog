@@ -1,0 +1,18 @@
+<body bgcolor="brown">
+
+
+<ul>
+<% @article.errors.full_messages.each do |msg| %>
+<li><%= msg %></li>
+
+</ul>
+</div>
+<% end %>
+
+<font size="7" style="color:white">New article</font>
+<h2 style="color:white" >
+<%= render 'form' %> </h2>
+<h2>
+<%= link_to 'Back', articles_path %></h2>
+<h1  style="color:white" align=right>Khalilziaratwal</h1>
+
